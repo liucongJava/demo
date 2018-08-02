@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 import java.util.Date;
 
 public class User {
-	private Integer id; //id 
+	private Integer id; //id  
 	private String userCode; //用户编码
 	private String userName; //用户名称
 	private String userPassword; //用户密码
@@ -17,6 +17,7 @@ public class User {
 	private Integer modifyBy;     //更新者
 	private Date modifyDate;   //更新时间
 	
+	@SuppressWarnings("unused")
 	private Integer age;//年龄
 	
 	private String userRoleName;    //用户角色名称
@@ -28,6 +29,7 @@ public class User {
 	public void setUserRoleName(String userRoleName) {
 		this.userRoleName = userRoleName;
 	}
+	@SuppressWarnings("deprecation")
 	public Integer getAge() {
 		/*long time = System.currentTimeMillis()-birthday.getTime();
 		Integer age = Long.valueOf(time/365/24/60/60/1000).IntegerValue();*/
